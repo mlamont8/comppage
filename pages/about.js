@@ -1,9 +1,9 @@
 import Layout from "../components/Layout.js";
 
-export default function Index() {
+export default function About() {
   return (
     <Layout>
-      <p>Hello Next.js</p>
+      <p>About Page</p>
     </Layout>
   );
 }
