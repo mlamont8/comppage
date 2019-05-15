@@ -1,5 +1,6 @@
 import Layout from "../components/Layout.js";
 import Fonts from "../Utils/fonts.js";
+import Hero from "../components/Hero";
 
 class Index extends React.Component {
   componentDidMount() {
@@ -9,7 +10,9 @@ class Index extends React.Component {
   render() {
     return (
       <Layout>
-        <section className="hero">Hero</section>
+        <section className="hero">
+          <Hero />
+        </section>
         <section className="brands">Brands</section>
         <section className="aboutUs">About Us</section>
       </Layout>
