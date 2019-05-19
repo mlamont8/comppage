@@ -5,7 +5,7 @@ const linkStyle = {
 };
 
 const Header = () => (
-  <div className="navbar">
+  <nav className="navbar">
     <Link href="/">
       <a style={linkStyle}>Home</a>
     </Link>
@@ -31,7 +31,7 @@ const Header = () => (
         text-decoration-line: solid;
       }
     `}</style>
-  </div>
+  </nav>
 );
 
 export default Header;
