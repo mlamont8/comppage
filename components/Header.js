@@ -61,7 +61,6 @@ class Header extends React.Component {
             position: absolute;
             top: 25px;
             right: 20px;
-
             cursor: pointer;
           }
 
@@ -79,6 +78,7 @@ class Header extends React.Component {
             .navbar {
               display: flex;
               justify-content: space-between;
+              height: 70px;
               padding-bottom: 0;
               align-items: center;
             }
