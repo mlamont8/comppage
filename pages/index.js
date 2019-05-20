@@ -33,24 +33,48 @@ class Index extends React.Component {
             </div>
           </div>
         </section>
+        <section className="weAre">
+          <h2>We ARE</h2>
+          <hr />
+          <div className="we-are-text">
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur
+              autem magnam alias at quasi quisquam, amet laudantium commodi
+              architecto soluta. Molestias, voluptates vitae! Debitis,
+              doloremque autem cupiditate hic quo quidem!
+            </p>
+          </div>
+        </section>
+        <section className="brands">
+          <div>brands</div>
+          <div>brands</div>
+          <div>brands</div>
+          <div>brands</div>
+          <div>brands</div>
+          <div>brands</div>
+          <div>brands</div>
+        </section>
         <section className="benefits">
           <h2>benefits</h2>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde,
-            impedit amet minima iste autem cumque et maiores blanditiis
-            doloribus aut dolorum quaerat non est voluptatum, tempore ut dolorem
-            voluptas quod quae accusantium, ex inventore ducimus. Beatae
-            mollitia exercitationem, quam similique, consectetur ratione
-            reprehenderit delectus neque eligendi facere soluta dolor ducimus!
-          </p>
+          <hr className="divider" />
+          <div className="benefits-container">
+            <div>benefits info</div>
+            <div>benefits info</div>
+            <div>benefits info</div>
+            <div>benefits info</div>
+          </div>
         </section>
         <style jsx>{`
-          .brands,
-          .aboutUs {
+          .benefits,
+          .aboutUs,
+          .weAre
+           {
             padding: 20px 0;
             text-align: center;
           }
-          .about-image-container {
+          .about-image-container,
+          .benefits-container,
+          .brands {
             display: flex;
             justify-content: space-around;
             flex-wrap: wrap;
@@ -66,6 +90,10 @@ class Index extends React.Component {
           .benefits {
             background: #333;
             color: #fff;
+          }
+
+          .we-are-text {
+            padding: 0 20%;
           }
 
           img {
