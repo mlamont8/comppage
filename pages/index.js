@@ -46,13 +46,24 @@ class Index extends React.Component {
           </div>
         </section>
         <section className="brands">
-          <div>brands</div>
-          <div>brands</div>
-          <div>brands</div>
-          <div>brands</div>
-          <div>brands</div>
-          <div>brands</div>
-          <div>brands</div>
+          <div>
+            <i className="fab fa-vuejs fa-3x" />
+          </div>
+          <div>
+            <i className="fab fa-react fa-3x" />
+          </div>
+          <div>
+            <i className="fab fa-node-js fa-3x" />
+          </div>
+          <div>
+            <i className="fab fa-angular fa-3x" />
+          </div>
+          <div>
+            <i className="fab fa-python fa-3x" />
+          </div>
+          <div>
+            <i className="fab fa-js fa-3x" />
+          </div>
         </section>
         <section className="benefits">
           <h2>benefits</h2>
@@ -80,7 +91,7 @@ class Index extends React.Component {
             flex-wrap: wrap;
           }
           .about-image-container div {
-            width: 500px;
+            max-width: 500px;
           }
 
           .about-image span {
@@ -99,6 +110,14 @@ class Index extends React.Component {
           img {
             width: 100%;
             height: auto;
+          }
+
+          .brands {
+            color: #C0C0C0;
+            padding: 80px 0;
+          }
+          .brands .div {
+            width: 30px;
           }
         `}</style>
       </Layout>
