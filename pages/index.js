@@ -12,32 +12,29 @@ class Index extends React.Component {
       <Layout>
         <Hero />
         <section className="aboutUs">
-          <h2>Best In The Business</h2>
+          <h2 className="subTitles">Best In The Business</h2>
           <hr className="divider" />
-          <p className="section-intro">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde,
-            impedit amet
-          </p>
+          <p className="mainText">100% client satisfaction rate</p>
           <div className="about-image-container">
             <div className="about-image-left about-image">
               <div>
                 <img src="/static/images/passionate.jpg" />
               </div>
-              <span>Image Title</span>
+              <span className="imageTitle">Image Title</span>
             </div>
             <div className="about-image-right about-image">
               <div>
                 <img src="/static/images/professional.jpg" />
               </div>
-              <span>Image Title</span>
+              <span className="imageTitle">Image Title</span>
             </div>
           </div>
         </section>
         <section className="weAre">
-          <h2>We ARE</h2>
+          <h2 className="subTitles">We ARE</h2>
           <hr />
           <div className="we-are-text">
-            <p>
+            <p className="mainText">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur
               autem magnam alias at quasi quisquam, amet laudantium commodi
               architecto soluta. Molestias, voluptates vitae! Debitis,
@@ -66,13 +63,25 @@ class Index extends React.Component {
           </div>
         </section>
         <section className="benefits">
-          <h2>benefits</h2>
+          <h2 className="subTitles">benefits</h2>
           <hr className="divider" />
           <div className="benefits-container">
-            <div>benefits info</div>
-            <div>benefits info</div>
-            <div>benefits info</div>
-            <div>benefits info</div>
+            <div>
+              <div>Professional</div>
+              <span className="mainText">
+                Some of the most qualified in the industry
+              </span>
+            </div>
+            <div>
+              <div>Affordable</div>
+              <span className="mainText">
+                The Best Rates for the Highest Quality
+              </span>
+            </div>
+            <div>
+              <div>Satisfaction</div>
+              <span className="mainText">Your Happiness is our #1 goal</span>
+            </div>
           </div>
         </section>
         <style jsx>{`
@@ -90,10 +99,23 @@ class Index extends React.Component {
             justify-content: space-around;
             flex-wrap: wrap;
           }
+
+          .subTitles{
+            font-size: 30px;
+            text-transform: uppercase;
+          }
+
+          .mainText{
+            font-size: 20px;
+            color: #5a5677;
+          }
           .about-image-container div {
             max-width: 500px;
           }
-
+          .imageTitle {
+            font-size: 1.2em;
+            
+          }
           .about-image span {
             text-align: center:
           }
