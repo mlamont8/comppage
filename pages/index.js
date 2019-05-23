@@ -92,6 +92,7 @@ class Index extends React.Component {
             padding: 20px 0;
             text-align: center;
           }
+
           .about-image-container,
           .benefits-container,
           .brands {
@@ -99,6 +100,24 @@ class Index extends React.Component {
             justify-content: space-around;
             flex-wrap: wrap;
           }
+
+          @keyframes spreadOut {
+            0% {
+              opacity: 0;
+              transform: scaleX(0);
+              }
+            100% {
+                opacity: 1;
+                transform: scaleX(1.5);
+              }
+          }
+
+          hr {
+            animation: spreadOut 1s .5s both;
+            width: 40px;
+              height: 2px;
+              background-color: rgb(52, 152, 219);
+}
 
           .subTitles{
             font-size: 30px;
@@ -109,19 +128,21 @@ class Index extends React.Component {
             font-size: 20px;
             color: #5a5677;
           }
+
           .about-image-container div {
             max-width: 500px;
           }
+
           .imageTitle {
             font-size: 1.2em;
             
           }
+
           .about-image span {
             text-align: center:
           }
 
           .benefits {
-            background: #333;
             color: #fff;
           }
 
@@ -138,6 +159,7 @@ class Index extends React.Component {
             color: #C0C0C0;
             padding: 80px 0;
           }
+
           .brands .div {
             width: 30px;
           }
