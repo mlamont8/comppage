@@ -117,7 +117,7 @@ class Index extends React.Component {
             width: 40px;
               height: 2px;
               background-color: rgb(52, 152, 219);
-}
+          }
 
           .subTitles{
             font-size: 30px;
