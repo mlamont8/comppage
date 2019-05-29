@@ -1,6 +1,7 @@
 import Header from "./Header";
 import Footer from "./Footer";
 import HeadLayout from "./HeadImport";
+import "animate.css/animate.min.css";
 
 const Layout = props => (
   <>

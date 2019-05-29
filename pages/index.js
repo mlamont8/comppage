@@ -1,6 +1,7 @@
 import Layout from "../components/Layout.js";
 import Fonts from "../Utils/fonts.js";
 import Hero from "../components/Hero";
+import ScrollAnimation from "react-animate-on-scroll";
 
 class Index extends React.Component {
   componentDidMount() {
@@ -20,19 +21,22 @@ class Index extends React.Component {
               <div>
                 <img src="/static/images/passionate.jpg" />
               </div>
-              <span className="imageTitle">Image Title</span>
+              <span className="imageTitle">Planning & Design</span>
             </div>
             <div className="about-image-right about-image">
               <div>
                 <img src="/static/images/professional.jpg" />
               </div>
-              <span className="imageTitle">Image Title</span>
+              <span className="imageTitle">On Time Delivery</span>
             </div>
           </div>
         </section>
         <section className="weAre">
-          <h2 className="subTitles">We ARE</h2>
-          <hr />
+          <ScrollAnimation duration={2} animateIn="fadeIn">
+            <h2 className="subTitles">We are</h2>
+            <hr />
+          </ScrollAnimation>
+
           <div className="we-are-text">
             <p className="mainText">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur
@@ -89,6 +93,7 @@ class Index extends React.Component {
           .aboutUs,
           .weAre
            {
+             margin-top: 100px;
             padding: 20px 0;
             text-align: center;
           }
@@ -120,13 +125,14 @@ class Index extends React.Component {
           }
 
           .subTitles{
-            font-size: 30px;
+            font-size: 25px;
             text-transform: uppercase;
           }
 
           .mainText{
             font-size: 20px;
             color: #5a5677;
+            padding-bottom: 50px;
           }
 
           .about-image-container div {
@@ -135,6 +141,7 @@ class Index extends React.Component {
 
           .imageTitle {
             font-size: 1.2em;
+            font-weight: 700;
             
           }
 
@@ -143,7 +150,7 @@ class Index extends React.Component {
           }
 
           .benefits {
-            color: #fff;
+            color: #000;
           }
 
           .we-are-text {
@@ -153,6 +160,7 @@ class Index extends React.Component {
           img {
             width: 100%;
             height: auto;
+            padding-bottom: 30px;
           }
 
           .brands {
