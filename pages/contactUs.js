@@ -32,10 +32,10 @@ class ContactUs extends React.Component {
     return (
       <Layout>
         <section className="contactHead">
-          <h1>We'll Love To Hear From You</h1>
+          <h1>We'd Love To Hear From You</h1>
           <p>
             We've done some amazing things for our clients. Let us do something
-            much better for you.
+            better for you.
           </p>
           <address>
             Our Company
@@ -49,43 +49,104 @@ class ContactUs extends React.Component {
 
         <section className="inputForm">
           <form onSubmit={this.handleSubmit}>
-            <label htmlFor="name">name</label>
-            <input
-              name="name"
-              type="text"
-              value={this.state.name}
-              onChange={this.handleChange}
-            />
-            <br />
+            <ul className="wrapper">
+              <li className="formRow">
+                <label htmlFor="name">name</label>
+                <input
+                  name="name"
+                  type="text"
+                  value={this.state.name}
+                  onChange={this.handleChange}
+                />
+              </li>
 
-            <label htmlFor="company">company</label>
-            <input
-              name="company"
-              type="text"
-              value={this.state.company}
-              onChange={this.handleChange}
-            />
-            <br />
+              <li className="formRow">
+                <label htmlFor="company">company</label>
+                <input
+                  name="company"
+                  type="text"
+                  value={this.state.company}
+                  onChange={this.handleChange}
+                />
+              </li>
 
-            <label htmlFor="email">email</label>
-            <input
-              name="email"
-              type="text"
-              value={this.state.email}
-              onChange={this.handleChange}
-            />
-            <br />
+              <li className="formRow">
+                <label htmlFor="email">email</label>
+                <input
+                  name="email"
+                  type="text"
+                  value={this.state.email}
+                  onChange={this.handleChange}
+                />
+              </li>
 
-            <label htmlFor="comments">comments</label>
-            <input
-              name="comments"
-              type="text"
-              value={this.state.comments}
-              onChange={this.handleChange}
-            />
-            <button type="submit" value="Submit" />
+              <li className="formRow">
+                <label htmlFor="comments">comments</label>
+                <textarea
+                  name="comments"
+                  cols="40"
+                  rows="10"
+                  type="text"
+                  value={this.state.comments}
+                  onChange={this.handleChange}
+                />
+              </li>
+
+              <li className="formRow">
+                <button type="submit" value="Submit">
+                  Submit
+                </button>
+              </li>
+            </ul>
           </form>
         </section>
+
+        <style jsx>
+          {`
+            .contactHead {
+              text-align: center;
+              padding: 0 30%;
+            }
+            h1 {
+              font-size: 3.2rem;
+            }
+
+            .contactHead p {
+              font-size: 2rem;
+              color: #828282;
+            }
+
+            .wrapper {
+              list-style-type: none;
+              padding: 5em 10em;
+              border-radius: 3px;
+              background-color: #f5f5f5;
+              color: #828282;
+              font-size: 1.2em;
+            }
+
+            .formRow {
+              display: flex;
+              justify-content: flex-end;
+              padding: 0.5em;
+            }
+
+            .formRow label {
+              padding: 0.5em 1em 0.5em 0;
+              flex: 1;
+              text-transform: uppercase;
+            }
+
+            .formRow input {
+              flex: 2;
+            }
+
+            .formRow input,
+            .formRow button {
+              padding: 0.5em;
+            }
+          `}
+        </style>
       </Layout>
     );
   }
