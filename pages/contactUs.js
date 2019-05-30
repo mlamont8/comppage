@@ -24,6 +24,7 @@ class ContactUs extends React.Component {
   }
 
   handleSubmit(event) {
+    event.preventDefault();
     console.log(this.state);
   }
 
@@ -55,6 +56,7 @@ class ContactUs extends React.Component {
               value={this.state.name}
               onChange={this.handleChange}
             />
+            <br />
 
             <label htmlFor="company">company</label>
             <input
@@ -63,6 +65,7 @@ class ContactUs extends React.Component {
               value={this.state.company}
               onChange={this.handleChange}
             />
+            <br />
 
             <label htmlFor="email">email</label>
             <input
@@ -71,6 +74,7 @@ class ContactUs extends React.Component {
               value={this.state.email}
               onChange={this.handleChange}
             />
+            <br />
 
             <label htmlFor="comments">comments</label>
             <input
@@ -79,6 +83,7 @@ class ContactUs extends React.Component {
               value={this.state.comments}
               onChange={this.handleChange}
             />
+            <button type="submit" value="Submit" />
           </form>
         </section>
       </Layout>
