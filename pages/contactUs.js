@@ -118,7 +118,7 @@ class ContactUs extends React.Component {
 
             .wrapper {
               list-style-type: none;
-              padding: 5em 10em;
+              padding: 5em 15%;
               border-radius: 3px;
               background-color: #f5f5f5;
               color: #828282;
@@ -144,6 +144,12 @@ class ContactUs extends React.Component {
             .formRow input,
             .formRow button {
               padding: 0.5em;
+            }
+
+            @media screen and (max-width: 600px) {
+              .wrapper {
+                padding: 5em 0;
+              }
             }
           `}
         </style>
