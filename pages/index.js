@@ -12,40 +12,6 @@ class Index extends React.Component {
     return (
       <Layout>
         <Hero />
-        <section className="aboutUs">
-          <h2 className="subTitles">Best In The Business</h2>
-          <hr className="divider" />
-          <p className="mainText">100% client satisfaction rate</p>
-          <div className="about-image-container">
-            <div className="about-image-left about-image">
-              <div>
-                <img src="/static/images/passionate.jpg" />
-              </div>
-              <span className="imageTitle">Planning & Design</span>
-            </div>
-            <div className="about-image-right about-image">
-              <div>
-                <img src="/static/images/professional.jpg" />
-              </div>
-              <span className="imageTitle">On Time Delivery</span>
-            </div>
-          </div>
-        </section>
-        <section className="weAre">
-          <ScrollAnimation duration={2} animateIn="fadeIn">
-            <h2 className="subTitles">We are</h2>
-            <hr />
-          </ScrollAnimation>
-
-          <div className="we-are-text">
-            <p className="mainText">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur
-              autem magnam alias at quasi quisquam, amet laudantium commodi
-              architecto soluta. Molestias, voluptates vitae! Debitis,
-              doloremque autem cupiditate hic quo quidem!
-            </p>
-          </div>
-        </section>
         <section className="brands">
           <div>
             <i className="fab fa-vuejs fa-3x" />
@@ -66,6 +32,48 @@ class Index extends React.Component {
             <i className="fab fa-js fa-3x" />
           </div>
         </section>
+        <section className="aboutUs">
+          <h2 className="subTitles">Best In The Business</h2>
+          <hr className="divider" />
+          <p className="mainText">100% client satisfaction rate</p>
+          <div className="about-image-container">
+            <div className="about-image-left about-image">
+              <div>
+                <ScrollAnimation duration={3} animateIn="fadeIn">
+                  <img src="/static/images/passionate.jpg" />
+                </ScrollAnimation>
+              </div>
+              <span className="imageTitle">Planning & Design</span>
+              <hr />
+            </div>
+            <div className="about-image-right about-image">
+              <div>
+                <ScrollAnimation duration={3} animateIn="fadeIn">
+                  <img src="/static/images/professional.jpg" />
+                </ScrollAnimation>
+              </div>
+              <span className="imageTitle">On Time Delivery</span>
+              <hr />
+            </div>
+          </div>
+        </section>
+        <section className="weAre">
+          <ScrollAnimation duration={3} animateIn="fadeIn">
+            <h2 className="subTitles">We are</h2>
+            <hr />
+          </ScrollAnimation>
+
+          <div className="we-are-text">
+            <p className="mainText">
+              We are an innovative team of professionals who provide timely and
+              high quality experiences. Innovation has been at the heart of
+              everything we do. We are driven to understand and use the best of
+              technology to bring the most superior service to clients all over
+              the world!
+            </p>
+          </div>
+        </section>
+
         <section className="benefits">
           <h2 className="subTitles">benefits</h2>
           <hr className="divider" />
